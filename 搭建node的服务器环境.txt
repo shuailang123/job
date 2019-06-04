@@ -5,3 +5,4 @@ npm install -g anywhere
 4.将路径制定到你的项目的路径下；
 cd E:\web17\ajax\code\ajax-web17 (写自己的目录)
 5.执行 anywhere的命令
+aaai
