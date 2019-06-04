@@ -1,0 +1,125 @@
+
+			*{margin: 0;padding: 0;	
+		}
+		
+		body{
+			background: #F6F6F6;
+		}
+		/*头部logo*/
+		.header {
+		width: 100%;} 	
+		
+		.headerlogo{
+			background-image: url(../img/runoob-logo.png);
+			background-repeat: no-repeat;
+			text-indent: -99999px;
+			margin-top: 0.9375rem;
+			margin-left: 3.125rem;
+			}
+		/*搜索框*/
+		#sousuo{			
+			float: right;
+			margin-right: 3.125rem;							
+		}
+		
+		.header input{
+			font-height: 400px;
+			font-size: 1.2em;
+			-webkit-rtl-ordering: logical;
+			 cursor: text;										
+		}		
+		.header form{
+		    background: #eeefed;		   
+		    padding: 5px;
+		    border-radius: 5px;		    			
+		}
+		
+		/*导航css*/
+		#indexnav {
+			background: #96b97d ;
+			width: 100%;
+			overflow: hidden;	
+			margin-top: 0.3125rem;					
+		}
+		
+		.nav1,li{
+			list-style: none;															
+		}
+		
+		li a{
+			text-decoration:none;						
+		}
+		
+		#nav1 li a{
+			color: #fff;
+			float: left;
+			margin: 15px;
+			padding-left: 20px;
+		}
+		
+		/*左侧导航*/
+		#leftnav1{
+			background-color: #f2f2f2;
+			width: 12%;
+		}
+				
+		div .leftnav2 li {
+			padding: 8px;			
+			border-bottom: 2px solid #EFEFEF;
+			
+		}
+		div .leftnav2 li:nth-child(even){
+			background-color: #FBFBFB;
+			
+		}
+		
+		div .leftnav2 li:nth-child(odd){
+			background-color: #FFFFFF;
+			
+		}
+		
+		.leftnav1{
+			border: 3px solid  #F6F6F6 ;			
+			margin-top: 15px;
+			font-size:  12px;			
+			text-align: center;						
+		}
+		
+		#leftnavigation .leftnav1 h2{
+			border-bottom: 3px solid #EFEFEF;
+			background-color:#F0F0F0;
+			color: grey;			
+		}	
+			
+		#leftnavigation .leftnav2 a{
+			font-family:"微软雅黑" ;
+			font-size: 12px;
+			color: #000000;
+		}
+		
+		#leftnavigation {
+			width: 14%;			
+		}
+		
+		#main{
+			width: 100%;
+		}
+		
+		#content{
+			width: 50%;			
+		    margin-right: 0;
+		    padding: 12px 20px;
+		    border: 1px solid #eaeaea;
+		    background-color: #fff;
+		    border-radius: 4px;
+		 
+		}
+		
+		#content h2{
+		float: left;	
+		}				
+				
+		#sousuo{
+			display: none;
+		}
+		

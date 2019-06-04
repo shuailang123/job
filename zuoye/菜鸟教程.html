@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+        <meta name="keywords" content="w3cschool,HTML,CSS,PHP,DOM,JavaScript,jQuery,XML,AJAX,ASP.NET,W3C,MySQL,SQL,jquery mobile,bootstrap,Python,jquery easyui,jquery ui,angularjs">
+        <meta name="description" content="菜鸟教程(www.runoob.com)提供了编程的基础技术教程, 介绍了HTML、CSS、Javascript、Python，Java，Ruby，C，PHP , MySQL等各种编程语言的基础知识。 同时本站中也提供了大量的在线实例，通过实例，您可以更好的学习编程。..">
+        <title>菜鸟教程 - 学的不仅是技术，更是梦想！</title>
+        <link rel="stylesheet" href="css/cainiao.css" media="screen and (min-width:1024px)">
+        <link rel="stylesheet" href="css/cainiao1.css" media="screen and (max-width:1024px) and (min-width:768px)">
+        <link rel="stylesheet" href="css/cainiao2.css" media="screen and (max-width:768px) and (min-width:640px)">
+        <link rel="stylesheet" href="css/cainiao3.css" media="screen and (max-width:640px)">
+    </head>
+    
+    <body>
+<!--        头部-->
+        <div class="header container">
+<!--            logo-->
+            <div class="logo">
+                <h1><a href="/">菜鸟教程 -- 学的不仅是技术，更是梦想！</a></h1>
+            </div>
+<!--            搜索栏-->
+            <div class="search">
+                <form action="//www.runoob.com/" target="_blank">
+                    <input class="placeholder" id="s" name="s" placeholder="搜索……" autocomplete="off">
+                </form>
+            </div>
+        </div>
+
+<!--        导航-->
+        <div class="navigation container">
+            <div class="wrap">
+                <div class="nav">
+                    <ul id="index-nav">
+                        <li><a href="//www.runoob.com/" data-id="index" title="菜鸟教程" class="current">首页</a></li>
+                        <li><a href="//www.runoob.com/w3cnote/" target="_blank" data-id="note" title="菜鸟笔记">菜鸟笔记</a></li>
+                        <li><a href="https://c.runoob.com/" target="_blank" title="不止于工具">菜鸟工具</a></li>
+                        <li><a href="javascript:void(0);" data-id="manual" title="参考手册">参考手册</a></li>
+                        <li><a href="//www.runoob.com/commentslist" data-id="commentslist" target="_bank" title="英文文档集合">用户笔记</a></li>
+                        <li><a href="javascript:void(0);" data-id="quiz" title="测验/考试">测验/考试</a></li>
+                        <li><a href="//www.runoob.com/browser-history" target="_blank" data-id="bookmark">本地书签</a></li>
+                        <li><a href="javascript:;" class="runoob-pop">登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!--        主体-->
+        <div class="container main">
+<!--            左列-->
+            <div class="wrap">
+                <div class="left-column">
+                    <div class="tab">
+                        <i class="iconfont beforetop"></i> 全部教程
+                    </div>
+                    <div class="sidebar-box">
+                        <div class="design">
+                            <div class="sidebar-nav">
+                                <i class="iconfont before"></i> HTML / CSS
+                            </div>
+                        </div>
+                        <div class="design">
+                            <div class="sidebar-nav">
+                                <i class="iconfont before"></i> JavaScript
+                            </div>
+                        </div>
+                        <div class="design">
+                            <div class="sidebar-nav">
+                                <i class="iconfont before"></i> 服务端
+                            </div>
+                        </div>
+                        <div class="design">
+                            <div class="sidebar-nav">
+                                <i class="iconfont before"></i> 数据库
+                            </div>
+                        </div>
+                        <div class="design">
+                            <div class="sidebar-nav">
+                                <i class="iconfont before"></i> 移动端
+                            </div>
+                        </div>
+                        <div class="design">
+                            <div class="sidebar-nav">
+                                <i class="iconfont before"></i> XML 教程
+                            </div>
+                        </div>
+                        <div class="design">
+                            <div class="sidebar-nav">
+                                <i class="iconfont before"></i> ASP.NET
+                            </div>
+                        </div>
+                        <div class="design">
+                            <div class="sidebar-nav">
+                                <i class="iconfont before"></i> Web Service
+                            </div>
+                        </div>
+                        <div class="design">
+                            <div class="sidebar-nav">
+                                <i class="iconfont before"></i> 开发工具
+                            </div>
+                        </div>
+                        <div class="design">
+                            <div class="sidebar-nav">
+                                <i class="iconfont before"></i> 网站建设
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--                右列-->
+                <div class="middle-column">
+
+                    <div class="contentlist">
+
+                        <h2>
+                            <i class="iconfont iconfont-list"></i> HTML / CSS
+                        </h2>
+
+                        <a class="item" href="//www.runoob.com/html/html-tutorial.html">
+                            <h3>【学习 HTML】</h3>
+                            <img class="item-icon" src="../img/Rookie/HTML CSS/html.png">
+                            <strong>HTML，即超文本标记语言（Hyper Text Markup Language）</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/html/html5-intro.html"><h3>【学习 HTML5】</h3>
+                            <img class="item-icon" src="../img/Rookie/HTML CSS/html5.png">
+                            <strong>HTML5 是下一代 HTML 标准</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/css/css-tutorial.html"><h3>【学习 CSS】</h3>
+                            <img class="item-icon" src="../img/Rookie/HTML CSS/css.png">
+                            <strong>层叠样式表（Cascading StyleSheet）</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/css3/css3-tutorial.html"><h3>【学习 CSS3】</h3>
+                            <img class="item-icon" src="../img/Rookie/HTML CSS/css3.png">
+                            <strong>CSS3是CSS技术的升级版本</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/bootstrap/bootstrap-tutorial.html"><h3>【学习 Bootstrap3】</h3>
+                            <img class="item-icon" src="../img/Rookie/HTML CSS/bs3.png">
+                            <strong>Bootstrap，来自 Twitter，是目前最受欢迎的前端框架</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/bootstrap4/bootstrap4-tutorial.html"><h3>【学习 Bootstrap4】</h3>
+                            <img class="item-icon" src="../img/Rookie/HTML CSS/bs4.png">
+                            <strong>Bootstrap4 目前是 Bootstrap 的最新版本</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/font-awesome/fontawesome-tutorial.html"><h3>【学习 Font Awesome】</h3>
+                            <img class="item-icon" src="../img/Rookie/HTML CSS/fa.png">
+                            <strong>Font Awesome 是一套绝佳的图标字体库和CSS框架。</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/foundation/foundation-tutorial.html"><h3>【学习 Foundation】</h3>
+                            <img class="item-icon" src="../img/Rookie/HTML CSS/fd.png">
+                            <strong>Foundation 用于开发响应式的 HTML, CSS and JavaScript 框架</strong>
+                        </a>
+                    </div>
+
+                    <div class="contentlist">
+
+                        <h2><i class="iconfont iconfont-list"></i> JavaScript</h2>
+
+                        <a class="item" href="//www.runoob.com/js/js-tutorial.html"><h3>【学习 JavaScript】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/js.png">
+                            <strong>JavaScript 是 Web 的编程语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/htmldom/htmldom-tutorial.html"><h3>【学习 HTML DOM】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/hd.png">
+                            <strong>HTML DOM 定义了访问和操作 HTML 文档的标准方法</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/jquery/jquery-tutorial.html"><h3>【学习 jQuery】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/jQuery.png">
+                            <strong>jQuery 是一个 JavaScript 库</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/angularjs/angularjs-tutorial.html"><h3>【学习 AngularJS】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/aj.png">
+                            <strong>AngularJS 通过新的属性和表达式扩展了 HTML</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/angularjs2/angularjs2-tutorial.html"><h3>【学习 AngularJS2】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/aj2.png">
+                            <strong>AngularJS2 是一款开源JavaScript库，由Google维护。</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/vue2/vue-tutorial.html"><h3>【学习 Vue.js】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/vue.png">
+                            <strong>Vue.js 是一套构建用户界面的渐进式框架。</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/react/react-tutorial.html"><h3>【学习 React】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/react.png">
+                            <strong>React 是一个用于构建用户界面的 JAVASCRIPT 库</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/typescript/ts-tutorial.html"><h3>【学习 TypeScript】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/ts.png">
+                            <strong>TypeScript 是 JavaScript 的一个超集，支持 ECMAScript 6 标准</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/jqueryui/jqueryui-tutorial.html"><h3>【学习 jQuery UI】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/ju.png">
+                            <strong>jQuery UI 是建立在 jQuery上的一组用户界面交互、特效、小部件及主题</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/jeasyui/jqueryeasyui-tutorial.html"><h3>【学习 jQuery EasyUI 】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/je.png">
+                            <strong>jQuery EasyUI 是一个基于 jQuery 的框架，集成了各种用户界面插件</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/nodejs/nodejs-tutorial.html"><h3>【学习 Node.js】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/node.png">
+                            <strong>Node.js 是运行在服务端的 JavaScript</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/ajax/ajax-tutorial.html"><h3>【学习 AJAX】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/ajax.png">
+                            <strong>AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/json/json-tutorial.html"><h3>【学习 JSON】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/json.png">
+                            <strong>JSON 是存储和交换文本信息的语法</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/highcharts/highcharts-tutorial.html"><h3>【学习 Highcharts】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/hc.png">
+                            <strong>Highcharts 是一个用纯JavaScript编写的一个图表库</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/googleapi/google-maps-basic.html"><h3>【学习 Google 地图】</h3>
+                            <img class="item-icon" src="../img/Rookie/JavaScript/gm.png">
+                            <strong>Google 地图接口使用说明</strong>
+                        </a>
+                    </div>
+
+                    <div class="contentlist">
+
+                        <h2><i class="iconfont iconfont-list"></i> 服务端</h2>
+
+                        <a class="item" href="//www.runoob.com/php/php-tutorial.html"><h3>【学习 PHP】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/php.png">
+                            <strong>PHP 是一种通用开源脚本语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/python/python-tutorial.html"><h3>【学习 Python】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/py.png">
+                            <strong>Python 是一种面向对象、解释型计算机程序设计语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/python3/python3-tutorial.html"><h3>【学习 Python3】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/py3.png">
+                            <strong>Python 升级版，变化较大</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/django/django-tutorial.html"><h3>【学习 Django】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/dj.png">
+                            <strong>Django是一个开放源代码的Web应用框架，由Python写成</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/linux/linux-tutorial.html"><h3>【学习 Linux】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/linux.png">
+                            <strong>Linux是一套免费使用和自由传播的类Unix操作系统</strong></a>
+
+                        <a class="item" href="//www.runoob.com/docker/docker-tutorial.html"><h3>【学习 Docker】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/docker.png">
+                            <strong>Docker 是一个开源的应用容器引擎，基于 Go 语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/ruby/ruby-tutorial.html"><h3>【学习 Ruby】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/ruby.png">
+                            <strong>一种为简单快捷的面向对象编程（面向对象程序设计）而创的脚本语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/java/java-tutorial.html"><h3>【学习 Java】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/java.png">
+                            <strong>一种可以撰写跨平台应用软件的面向对象的程序设计语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/c/c-tutorial.html"><h3>【学习 C】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/c.png">
+                            <strong>一门通用计算机编程语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/cplusplus/cpp-tutorial.html"><h3>【学习 C++】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/c++.png">
+                            <strong>C++是在C语言的基础上开发的一种通用编程语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/perl/perl-tutorial.html"><h3>【学习 Perl】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/perl.png">
+                            <strong>Perl 是高级、通用、直译式、动态的程序语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/servlet/servlet-tutorial.html"><h3>【学习 Servlet 】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/sl.png">
+                            <strong>运行在 Web 服务器或应用服务器上的程序</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/jsp/jsp-tutorial.html"><h3>【学习 JSP】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/jsp.png">
+                            <strong>JSP与PHP、ASP、ASP.NET等语言类似，运行在服务端的语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/lua/lua-tutorial.html"><h3>【学习 Lua】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/lua.png">
+                            <strong>Lua 是一种轻量小巧的脚本语言，用标准C语言编写并以源代码形式开放</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/scala/scala-tutorial.html"><h3>【学习 Scala】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/scala.png">
+                            <strong>Scala 是一门多范式（multi-paradigm）的编程语言。</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/go/go-tutorial.html"><h3>【学习 Go】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/go.png">
+                            <strong>Go语言是谷歌推出的一种全新的编程语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/design-pattern/design-pattern-tutorial.html"><h3>【设计模式】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/dm.png">
+                            <strong>设计模式代表了最佳的实践，通常被有经验的面向对象的软件开发人员所采用</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/regexp/regexp-tutorial.html"><h3>【正则表达式】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/reg.png">
+                            <strong>正则表达式是对字符串操作的一种逻辑公式</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/maven/maven-tutorial.html"><h3>【学习 Maven】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/maven.png">
+                            <strong>Maven 是一个项目管理工具，可以对 Java 项目进行构建、依赖管理。</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/numpy/numpy-tutorial.html"><h3>【学习 NumPy】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/numpy.png">
+                            <strong>NumPy 是 Python 语言的一个扩展程序库，支持大量的维度数组与矩阵运算。</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/asp/asp-tutorial.html"><h3>【学习 ASP】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/asp.png">
+                            <strong>ASP（Active Server Pages 动态服务器页面）是一种生成动态交互性网页的强有力工具</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/appml/appml-tutorial.html"><h3>【学习 AppML】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/appml.png">
+                            <strong>AppML 是一个为web应用程序设计的HTML扩展框</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/vbscript/vbscript-tutorial.html"><h3>【学习 VBScript】</h3>
+                            <img class="item-icon" src="../img/Rookie/Server/vbs.png">
+                            <strong>一种微软环境下的轻量级的解释型语言</strong>
+                        </a>
+                    </div>
+
+                    <div class="contentlist">
+
+                        <h2><i class="iconfont iconfont-list"></i> 数据库</h2>
+
+                        <a class="item" href="//www.runoob.com/sql/sql-tutorial.html"><h3>【学习 SQL】</h3>
+                            <img class="item-icon" src="../img/Rookie/Database/sql.png">
+                            <strong>结构化查询语言(Structured Query Language)</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/mysql/mysql-tutorial.html"><h3>【学习 Mysql】</h3>
+                            <img class="item-icon" src="../img/Rookie/Database/mysql.png">
+                            <strong>MySQL是一个关系型数据库管理系统</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/sqlite/sqlite-tutorial.html"><h3>【学习 SQLite】</h3>
+                            <img class="item-icon" src="../img/Rookie/Database/sqlite.png">
+                            <strong>一款轻型的数据库</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/mongodb/mongodb-tutorial.html"><h3>【学习 MongoDB】</h3>
+                            <img class="item-icon" src="../img/Rookie/Database/mdb.png">
+                            <strong>Mongo DB 是目前在IT行业非常流行的一种非关系型数据库(NoSql)</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/redis/redis-tutorial.html"><h3>【学习 Redis】</h3>
+                            <img class="item-icon" src="../img/Rookie/Database/redis.png">
+                            <strong>一个高性能的key-value数据库</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/Memcached/Memcached-tutorial.html"><h3>【学习 Memcached】</h3>
+                            <img class="item-icon" src="../img/Rookie/Database/me.png">
+                            <strong>Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。</strong>
+                        </a>
+                    </div>
+
+                    <div class="contentlist">
+
+                        <h2><i class="iconfont iconfont-list"></i> 移动端</h2>
+
+                        <a class="item" href="//www.runoob.com/w3cnote/android-tutorial-intro.html"><h3>【学习 Android】</h3>
+                            <img class="item-icon" src="../img/Rookie/Mobile/android.png">
+                            <strong>Android 是一种基于Linux的自由及开放源代码的操作系统，主要使用于移动设备</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/swift/swift-tutorial.html"><h3>【学习 Swift】</h3>
+                            <img class="item-icon" src="../img/Rookie/Mobile/swift.png">
+                            <strong>Swift 是一种支持多编程范式和编译式的编程语言,用于开发 iOS，OS X 和 watchOS应用程序。</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/jquerymobile/jquerymobile-tutorial.html"><h3>【学习 jQuery Mobile】</h3>
+                            <img class="item-icon" src="../img/Rookie/Mobile/jm.png">
+                            <strong>jQuery Mobile是jQuery 在手机上和平板设备上的版本</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/ionic/ionic-tutorial.html"><h3>【学习 ionic】</h3>
+                            <img class="item-icon" src="../img/Rookie/Mobile/ionic.png">
+                            <strong>ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework )。</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/kotlin/kotlin-tutorial.html"><h3>【学习 Kotlin】</h3>
+                            <img class="item-icon" src="../img/Rookie/Mobile/ko.png">
+                            <strong>在 Java 虚拟机上运行的静态类型编程语言，Android 官方开发语言</strong>
+                        </a>
+                    </div>
+
+                    <div class="contentlist">
+
+                        <h2><i class="iconfont iconfont-list"></i> XML 教程</h2>
+
+                        <a class="item" href="//www.runoob.com/xml/xml-tutorial.html"><h3>【学习 XML】</h3>
+                            <img class="item-icon" src="../img/Rookie/XML/xml.png">
+                            <strong>XML 被设计用来传输和存储数据</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/dtd/dtd-tutorial.html"><h3>【学习 DTD】</h3>
+                            <img class="item-icon" src="../img/Rookie/XML/dtd.png">
+                            <strong>DTD（文档类型定义）的作用是定义 XML 文档的合法构建模块</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/dom/dom-tutorial.html"><h3>【学习 XML DOM】</h3>
+                            <img class="item-icon" src="../img/Rookie/XML/xmldom.png">
+                            <strong>XML DOM 定义访问和操作XML文档的标准方法</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/xsl/xsl-tutorial.html"><h3>【学习 XSLT】</h3>
+                            <img class="item-icon" src="../img/Rookie/XML/xslt.png">
+                            <strong>XSL 是一个 XML 文档的样式表语言，XSLT 指 XSL 转换</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/xpath/xpath-tutorial.html"><h3>【学习 XPath】</h3>
+                            <img class="item-icon" src="../img/Rookie/XML/xpath.png">
+                            <strong>XPath 是一门在 XML 文档中查找信息的语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/xquery/xquery-tutorial.html"><h3>【学习 XQuery】</h3>
+                            <img class="item-icon" src="../img/Rookie/XML/xq.png">
+                            <strong>XQuery 被设计用来查询 XML 数据</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/xlink/xlink-tutorial.html"><h3>【学习 XLink】</h3>
+                            <img class="item-icon" src="../img/Rookie/XML/xlink.png">
+                            <strong>XLink 定义在 XML 文档中创建超级链接的标准方法</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/xlink/xlink-tutorial.html"><h3>【学习 XPointer】</h3>
+                            <img class="item-icon" src="../img/Rookie/XML/xp.png">
+                            <strong>XPointer是在可扩展标志语言（XML）文件中定位数据的一种语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/schema/schema-tutorial.html"><h3>【学习 XML Schema】</h3>
+                            <img class="item-icon" src="../img/Rookie/XML/xmls.png">
+                            <strong>XML Schema 描述了 XML文档的结构</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/xslfo/xslfo-tutorial.html"><h3>【学习 XSL-FO】</h3>
+                            <img class="item-icon" src="../img/Rookie/XML/xmlfo.png">
+                            <strong>XSL-FO 指可扩展样式表语言格式化对象</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/svg/svg-tutorial.html"><h3>【学习 SVG】</h3>
+                            <img class="item-icon" src="../img/Rookie/XML/svg.png">
+                            <strong>SVG 使用 XML 格式定义图像</strong>
+                        </a>
+                    </div>
+
+                    <div class="contentlist">
+
+                        <h2><i class="iconfont iconfont-list"></i> ASP.NET</h2>
+
+                        <a class="item" href="//www.runoob.com/aspnet/aspnet-tutorial.html"><h3>【学习 ASP.NET】</h3>
+                            <img class="item-icon" src="../img/Rookie/ASP.NET/asp.png">
+                            <strong>ASP.NET 是一个使用 HTML、CSS、JavaScript 和服务器脚本创建网页和网站的开发框架</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/csharp/csharp-tutorial.html"><h3>【学习 C#】</h3>
+                            <img class="item-icon" src="../img/Rookie/ASP.NET/cshop.png">
+                            <strong>C# 是一个简单的、现代的、通用的、面向对象的编程语言</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/aspnet/webpages-intro.html"><h3>【学习 Web Pages】</h3>
+                            <img class="item-icon" src="../img/Rookie/ASP.NET/wp.png">
+                            <strong>Web Pages 是三种网页编程模型中的一种，用于创建网站和web 应用程序</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/aspnet/razor-intro.html"><h3>【学习 Razor】</h3>
+                            <img class="item-icon" src="../img/Rookie/ASP.NET/razor.png">
+                            <strong>Razor 是一种标记语法，可以让您将基于服务器的代码（Visual Basic 和 C#）嵌入到网页中</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/aspnet/mvc-intro.html"><h3>【学习 MVC】</h3>
+                            <img class="item-icon" src="../img/Rookie/ASP.NET/mvc.png">
+                            <strong>MVC（Model View Controller 模型-视图-控制器）</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/aspnet/aspnet-intro.html"><h3>【学习 Web Forms】</h3>
+                            <img class="item-icon" src="../img/Rookie/ASP.NET/wf.png">
+                            <strong>Web Forms 是三种创建 ASP.NET 网站和 Web 应用程序的编程模式中的一种</strong>
+                        </a>
+                    </div>
+
+                    <div class="contentlist">
+
+                        <h2><i class="iconfont iconfont-list"></i> Web Service</h2>
+
+                        <a class="item" href="//www.runoob.com/webservices/webservices-tutorial.html"><h3>【学习 Web Service】</h3>
+                            <img class="item-icon" src="../img/Rookie/Web Service/ws.png">
+                            <strong>Web Service 脚本平台需支持 XML + HTTP</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/wsdl/wsdl-tutorial.html"><h3>【学习 WSDL】</h3>
+                            <img class="item-icon" src="../img/Rookie/Web Service/wsdl.png">
+                            <strong>WSDL是一门基于 XML 的语言，用于描述 Web Service 以及如何对它们进行访问</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/soap/soap-tutorial.html"><h3>【学习 SOAP】</h3>
+                            <img class="item-icon" src="../img/Rookie/Web Service/soap.png">
+                            <strong>SOAP 是一种简单的基于 XML 的协议，它使应用程序通过 HTTP 来交换信息</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/rss/rss-tutorial.html"><h3>【学习 RSS】</h3>
+                            <img class="item-icon" src="../img/Rookie/Web Service/rss.png">
+                            <strong>RSS基于XML标准，在互联网上被广泛采用的内容包装和投递协议</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/rdf/rdf-tutorial.html"><h3>【学习 RDF】</h3>
+                            <img class="item-icon" src="../img/Rookie/Web Service/rdf.png">
+                            <strong>DF(资源描述框架)是描述网络资源的 W3C 标准</strong>
+                        </a>
+                    </div>
+
+                    <div class="contentlist">
+
+                        <h2><i class="iconfont iconfont-list"></i> 开发工具</h2>
+
+                        <a class="item" href="//www.runoob.com/eclipse/eclipse-tutorial.html"><h3>【学习 Eclipse】</h3>
+                            <img class="item-icon" src="../img/Rookie/Development Tool/ec.png">
+                            <strong>Eclipse 是一个开放源代码的、基于 Java 的可扩展开发平台</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/git/git-tutorial.html"><h3>【学习 Git】</h3>
+                            <img class="item-icon" src="../img/Rookie/Development Tool/git.png">
+                            <strong>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/svn/svn-tutorial.html"><h3>【学习 Svn】</h3>
+                            <img class="item-icon" src="../img/Rookie/Development Tool/svn.png">
+                            <strong> SVN 是一个开放源代码的版本控制系统</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/markdown/md-tutorial.html"><h3>【学习 Markdown】</h3>
+                            <img class="item-icon" src="../img/Rookie/Development Tool/md.png">
+                            <strong>Markdown 是一种轻量级标记语</strong>
+                        </a>
+                    </div>
+
+                    <div class="contentlist">
+
+                        <h2><i class="iconfont iconfont-list"></i> 网站建设</h2>
+
+                        <a class="item" href="//www.runoob.com/http/http-tutorial.html"><h3>【学习 HTTP】</h3>
+                            <img class="item-icon" src="../img/Rookie/Advise/http.png">
+                            <strong>HTTP协议（HyperText Transfer Protocol，超文本传输协议）是因特网上应用最为广泛的一种网络传输协议</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/web/web-buildingprimer.html"><h3>【网站建设指南】</h3>
+                            <img class="item-icon" src="../img/Rookie/Advise/wz.png">
+                            <strong>网站建设指导课程</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/browsers/browser-information.html"><h3>【浏览器信息】</h3>
+                            <img class="item-icon" src="../img/Rookie/Advise/bi.png">
+                            <strong>对于网站开发人员来说，浏览器信息和统计数据都是非常重要的</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/hosting/hosting-tutorial.html"><h3>【网站主机教程】</h3>
+                            <img class="item-icon" src="../img/Rookie/Advise/wj.png">
+                            <strong>如果您希望向全世界发布自己的网站，那么您的网站就需要被放置于一个 WEB 服务器</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/tcpip/tcpip-tutorial.html"><h3>【学习 TCP/IP】</h3>
+                            <img class="item-icon" src="../img/Rookie/Advise/ip.png">
+                            <strong>TCP/IP 是因特网的通信协议</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/w3c/w3c-tutorial.html"><h3>【学习 W3C】</h3>
+                            <img class="item-icon" src="../img/Rookie/Advise/w3c.png">
+                            <strong>W3C 让每个人都能在互联网上分享资源</strong>
+                        </a>
+
+                        <a class="item" href="//www.runoob.com/quality/quality-tutorial.html"><h3>【网站品质】</h3>
+                            <img class="item-icon" src="../img/Rookie/Advise/wp.png">
+                            <strong>学习如何创建高质量的web网站</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--        底部-->
+        <div id="footer">
+            <div class="footer-wrap">
+                <dl>
+                    <dt>
+                        在线实例
+                    </dt>
+                    <dd>
+                        ·<a target="_blank" href="/html/html-examples.html">HTML 实例</a>
+                    </dd>
+                    <dd>
+                        ·<a target="_blank" href="/css/css-examples.html">CSS 实例</a>
+                    </dd>
+                    <dd>
+                        ·<a target="_blank" href="/js/js-examples.html">JavaScript 实例</a>
+                    </dd>
+                    <dd>
+                        ·<a target="_blank" href="/ajx/ajax-examples.html">Ajax 实例</a>
+                    </dd>
+                    <dd>
+                        ·<a target="_blank" href="/jquery/jquery-examples.html">jQuery 实例</a>
+                    </dd>
+                    <dd>
+                        ·<a target="_blank" href="/xml/xml-examples.html">XML 实例</a>
+                    </dd>
+                    <dd>
+                        ·<a target="_blank" href="/java/java-examples.html">Java 实例</a>
+                    </dd>
+
+                </dl>
+                <dl>
+                    <dt>
+                        字符集&amp;工具
+                    </dt>
+                    <dd>
+                        · <a target="_blank" href="/charsets/html-charsets.html">HTML 字符集设置</a>
+                    </dd>
+                    <dd>
+                        · <a target="_blank" href="/tags/html-ascii.html">HTML ASCII 字符集</a>
+                    </dd>
+                    <dd>
+                        · <a target="_blank" href="/tags/ref-entities.html">HTML ISO-8859-1</a>
+                    </dd>
+                    <dd>
+                        · <a target="_blank" href="/tags/html-symbols.html">HTML 实体符号</a>
+                    </dd>
+                    <dd>
+                        · <a target="_blank" href="/tags/html-colorpicker.html">HTML 拾色器</a>
+                    </dd>
+                    <dd>
+                        · <a target="_blank" href="//c.runoob.com/front-end/53">JSON 格式化工具</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        最新更新
+                    </dt>
+                    <dd>
+                        ·
+                        <a href="https://www.runoob.com/postgresql/postgresql-syntax.html" title="PostgreSQL 语法">PostgreSQL 语法</a>
+                    </dd>
+                    <dd>
+                        ·
+                        <a href="https://www.runoob.com/postgresql/mac-install-postgresql.html" title="Mac OS 上安装 PostgreSQL">Mac OS 上安装 P...</a>
+                    </dd>
+                    <dd>
+                        ·
+                        <a href="https://www.runoob.com/postgresql/windows-install-postgresql.html" title="Windows 上安装 PostgreSQL">Windows 上安装 ...</a>
+                    </dd>
+                    <dd>
+                        ·
+                        <a href="https://www.runoob.com/postgresql/linux-install-postgresql.html" title="Linux 上安装 PostgreSQL">Linux 上安装 Po...</a>
+                    </dd>
+                    <dd>
+                        ·
+                        <a href="https://www.runoob.com/postgresql/postgresql-tutorial.html" title="PostgreSQL 教程">PostgreSQL 教程</a>
+                    </dd>
+                    <dd>
+                        ·
+                        <a href="https://www.runoob.com/python3/python-your-font.html" title="Python 打印自己设计的字体">Python 打印自己...</a>
+                    </dd>
+                    <dd>
+                        ·
+                        <a href="https://www.runoob.com/python3/python-timstamp-str.html" title="Python 将时间戳转换为指定格式日期">Python 将时间戳...</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        站点信息
+                    </dt>
+                    <dd>
+                        ·
+                        <a target="_blank" href="//mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=ssbDyoOAgfLU3crf09venNHd3w" rel="external nofollow">意见反馈</a>
+                    </dd>
+                    <dd>
+                        ·
+                        <a class="wxpopup" onclick="popFunction()">合作联系</a>
+                    </dd>
+                    <dd>
+                        ·
+                        <a target="_blank" href="/disclaimer">免责声明</a>
+                    </dd>
+                    <dd>
+                        ·
+                        <a target="_blank" href="/aboutus">关于我们</a>
+                    </dd>
+                    <dd>
+                        ·
+                        <a target="_blank" href="/archives">文章归档</a>
+                    </dd>
+
+                </dl>
+
+                <div class="search-share">
+                        <div class="app-download">
+                            <strong>关注微信</strong>
+                        </div>
+                        <div class="share">
+                            <img src="../img/Rookie/wxcode.png">
+                        </div>
+                </div>
+
+            </div>
+            <div class="copyright">
+                Copyright © 2013-2019
+                <strong><a href="//www.runoob.com/" target="_blank">菜鸟教程</a></strong>
+                <strong><a href="//www.runoob.com/" target="_blank">runoob.com</a></strong>
+                All Rights Reserved. 备案号：闽ICP备15012807号-1
+            </div>
+        </div>
+
+<!--        右边隐藏导航-->
+        <div class="fixed-btn">
+            <a class="go-top" href="javascript:void(0)" title="返回顶部">
+                <i class="iconfont"></i>
+            </a>
+            <a class="focus" href="javascript:void(0)" title="关注我们">
+                <i class="iconfont"></i>
+            </a>
+        </div>
+    </body>
+</html>

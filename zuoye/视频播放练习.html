@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频播放</title>
+		<style>
+			*{
+				margin: 0; padding: 0;
+			}
+			#player{
+				width: 50%;
+				position: relative;
+			}
+			video{
+				width: 100%;
+			}
+			#pro{
+				width: 100%;
+			}	
+			
+			#main{
+				width: 100%;
+				position: absolute;
+				left: 0;
+				bottom: 2%;
+				
+			}
+			#time{
+				color: white;
+			}
+
+			.btn2,.btn3,.btn4{
+				margin-right: 2%;
+				margin-top: auto;
+			}
+			.btn2{
+				margin-left: 40%;
+			}
+
+			.btn1{
+				background: url(img/bor1.png)no-repeat;
+				width: 5%;
+				height: 5%;
+				outline:0 none;
+				border: 0 ;
+			}
+			.btn3 {
+
+			}
+		</style>
+		
+	</head>
+	<body>
+		<!--引入视频
+		播放、暂停、进度条、静音、调节音量大小、全屏-->
+		<div id="player">
+		<video id="vd1" src="1.mp4" ></video>
+		
+		<div id="main">
+		<progress  value="" id="pro"></progress >		
+		<input type="button" class="btn1" value=""/>
+		<span id="time"></span>			
+		<input type="button" class="btn2" value="静音"/>
+		<input type="range" class="btn3" value="5" min="1" max="100" step="1"/>
+		<input type="button" class="btn4" value="全屏"/>
+		</div>
+
+		</div>
+		<script>
+			window.onload = function(){
+			//首先获取视频、文档
+			var oVd = document.getElementsByTagName('video')[0];
+			var aInput = document.getElementsByTagName('input');
+			var oPro = document.getElementById('pro');
+			var oTime = document.getElementById('time');
+			var minute = Math.floor(oVd.duration / 60);
+			var second = Math.round(oVd.duration -minute * 60 );
+			if(minute < 10){
+				var oTime1 = '0'+  minute +':' + second;
+			}else {
+				oVd.duration = minute +':'+second;
+			}
+			
+			//对按钮添加点击事件
+			//播放按钮+进度条绑定定时器事件			
+			oPro.max = oVd.duration//获取视频总时长  //当前视频播放时长currentTime
+			oPro.value = 0;  //进度条播放时间为0
+			
+			oTime.innerHTML='00:00/' + oTime1;   //在页面的时间上显示 视频总时长
+			
+			aInput[0].onclick = function(){
+				//播放和暂停按钮
+				if(oVd.paused){
+					oVd.play();	
+					}else{
+					oVd.pause(); 
+				}
+				
+				//计时器+进度条				
+				var timer = setInterval(function(){
+					oPro.value = oVd.currentTime;    //进度条时间=播放时间
+					var minute = Math.floor(oVd.currentTime / 60);
+					var second = Math.round(oVd.currentTime - minute *60);
+					if(second < 10){
+						var oTime2 = '0' + minute +':' + '0' +second;
+					} else  if(second > 59){
+						minute = 1;
+						second =0;
+						oTime2 = '0' +minute + ':' + '0'+second;
+					}else{
+						oTime2 = '0' + minute + ':' + second;					 
+					}
+					oTime.innerHTML= oTime2 + "/" + oTime1; 
+					if (oPro.value == oPro.max ) {
+						clearInterval(timer);
+						oPro.value = 0;
+					}										
+				},1);								
+			}
+							
+//			先获取最大时长duration
+//			然后设置进度条为0 
+//			然后设置定时器,在定时器内再获取播放时间
+			
+			
+			
+			//全屏     再加一个判断兼容火狐浏览器
+			aInput[3].onclick = function(){
+				if(navigator.userAgent.indexOf('Chrome') !== -1){
+					oVd.webkitRequestFullScreen();
+				}else{
+					oVd.mozRequestFullScreen();					
+				}								
+			}
+							
+							
+			//静音
+			aInput[1].onclick = function(){				
+				if(!oVd.muted){
+					oVd.muted=true;
+				}else{
+					oVd.muted=false;}
+			}
+				
+			//音量
+			aInput[2].onchange = function(){				
+					oVd.volume=this.value/100;
+			}
+			
+			
+			//快进
+			window.onkeydown=function(ev){
+				var ev = ev||window.event; 				
+				if(ev.keyCode == 39) {oVd.currentTime +=2;
+			}else if(ev.keyCode == 37){
+				oVd.currentTime -=2;
+			}	
+				
+				
+		}			
+			
+		}
+			
+			
+		</script>
+		
+		
+	</body>
+</html>
