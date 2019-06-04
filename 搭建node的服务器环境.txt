@@ -1,0 +1,7 @@
+1.安装 node
+2.将 cmd打开，执行 node -v,看一下node安装成功没有
+3.安装 anywhere 
+npm install -g anywhere
+4.将路径制定到你的项目的路径下；
+cd E:\web17\ajax\code\ajax-web17 (写自己的目录)
+5.执行 anywhere的命令
