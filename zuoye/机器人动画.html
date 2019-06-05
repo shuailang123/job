@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>机器人动画</title>
+		<style>
+			
+			#aa{
+				width: 900px;  height: 300px;
+			}
+			.a{widows: 900px;;height:197px;
+			background: url(img/robot.png) no-repeat;
+			animation: toMove 10s linear infinite;				 
+			}
+			@keyframes toMove{
+				0%{}
+				50%{background-position-x:1000px;}
+				55%{transform: rotateY(180deg);left: 200px;}
+				100%{}
+			}
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div id="aa"></div>
+		<div class="a">			
+		</div>
+		
+		
+		
+	</body>
+</html>

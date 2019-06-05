@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+    <meta charset="UTF-8">
+    <title>新浪轻应用</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <style type="text/css">
+        .wrapper{
+            width: 940px;
+            height: auto;
+            margin: 0 auto;
+        }
+        .homeBanner{
+            width: 100%;
+            height: 270px;
+            border: solid 1px #cccccc;
+        }
+        .hBLeft{
+            float:left
+            width: 138px;
+            height: 270px;
+            border-right: solid 1px #cccccc;
+        }
+        .hBLeft ul li{
+            height: 44px;
+            line-height: 44px;
+            font-size: 14px;
+            color: #666666;
+        }
+        .hBLeft ul li a.borderNone{
+            border: none;
+        }
+        .hBLeft ul li a{
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #808080;;
+            display: block;
+            margin: auto;
+            width: 100px;
+            height: 44px;
+            text-align: right;
+            border-top: solid 1px #cccccc;
+            background: url("images/homeIcon01.png") no-repeat;
+        }
+        .hBLeft ul li a.bLListIcon02{
+            background-position: 0 -45px;
+        }
+        .hBLeft ul li a.bLListIcon03{
+            background-position: 0 -89px;
+        }
+        .hBLeft ul li a.bLListIcon04{
+            background-position: 0 -134px;
+        }
+        .hBLeft ul li a.bLListIcon05{
+            background-position: 0 -179px;
+        }
+        .hBLeft ul li a.bLListIcon06{
+            background-position: 0 -224px;
+        }
+        .hBLeft ul li a:hover,.hBLeft ul li a.hover{
+            color: #09d;
+        }
+        .hBRight{
+            float: right;
+            width: 801px;
+            height: 270px;
+            position: relative;
+        }
+        .hBRightImgs li{
+            position: absolute;
+            top: 0; left: 0;
+            z-index: 1;
+        }
+        .hBRightImgs li.zIndex2{
+            z-index: 2;
+        }
+        .hBRightImgs li.zIndex3{
+            z-index: 3;
+        }
+        .hBRightImgs li.zIndex4{
+            z-index: 4;
+        }
+</head>
+<body>
+     <div class="wrapper">
+         <div class="homeBanner">
+             <div class="hBLeft">
+                 <ul>
+                     <li class="hover"><a href="#" class="borderNone">语言培训</a></li>
+                     <li><a href="#" class="bLListIcon02">职业技能</a></li>
+                     <li><a href="#" class="bLListIcon03">学历教育</a></li>
+                     <li><a href="#" class="bLListIcon04">IT&金融</a></li>
+                     <li><a href="#" class="bLListIcon05">兴趣爱好</a></li>
+                     <li><a href="#" class="bLListIcon06">医疗健康</a></li>
+                 </ul>
+             </div>
+             <div class="hBRight">
+                 <ul class="hBRightImgs">
+                     <li><img src="images/hBImgs01.jpg"></li>
+                     <li class="zIndex2"><img src="images/hBImgs01.jpg"></li>
+                     <li class="zIndex3"><img src="images/hBImgs01.jpg"></li>
+                     <li class="zIndex4"><img src="images/hBImgs01.jpg"></li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+</body>
+
+</html>
